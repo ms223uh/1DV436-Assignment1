@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GoogleMaps ft. Gmail</title>
+
+ <script type="text/javascript" src="Script/auth.js"></script>
+ <script src="https://apis.google.com/js/client.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAljl0YmYoJgJLOhbBq98H5mgDpyff6CXo" async defer></script>
+ 
+</head>
+
+<body>
+  
+  hej
+  
+  <div id="authorize-div">
+      <button id="authorize-button" onclick="auth.handleAuthLogin(event)">
+        Gmail Login
+      </button>
+    </div>
+  
+  <div id="map"></div>  
+  <pre id="output"></pre>
+  
+</body>
+</html>
