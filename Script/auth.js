@@ -37,3 +37,6 @@ var auth = {
 
 
 }
+
+
+console.log("auth")

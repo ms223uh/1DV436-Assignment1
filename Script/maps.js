@@ -7,8 +7,8 @@ var gMaps = {
     
     initMap: function(){
         
-        gMaps.geoCoder = new google.maps.geoCoder();
-        gMaps.infoWindow = new google.maps.infoWindow();
+        gMaps.geoCoder = new google.maps.Geocoder();
+        gMaps.infoWindow = new google.maps.InfoWindow();
         
         map = new google.maps.Map(document.getElementById("map"),
         {
@@ -56,5 +56,6 @@ var gMaps = {
          });
     },
     
-    
+  
 }
+console.log("maps")  
