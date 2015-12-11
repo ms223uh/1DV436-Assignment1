@@ -1,33 +1,32 @@
-<!doctype html>
-
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>GoogleMaps ft. Gmail</title>
-<meta name="viewport" content="initial-scale=1.0">
-
-<link rel="stylesheet" type="text/css" href="Style/style.css">
-
- <script type="text/javascript" src="Script/auth.js"></script>
- <script type="text/javascript" src="Script/maps.js"></script>
-  <script type="text/javascript" src="Script/mail.js"></script>
- <script src="https://apis.google.com/js/client.js"></script>
- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSECzi-_OBpH8PF-Yx8dkyC6dYWxJaaD0&callback=gMaps.initMap" async defer></script>
- 
-</head>
-
-<body>
-  
-  hej
-  
-  <div id="authorize-div">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gmail ft. GoogleMaps</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="Script/maps.js"></script>
+    
+    <script src="Script/mail.js"></script>
+    <script src="Script/auth.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="Style/style.css">
+    
+    <script src="https://apis.google.com/js/client.js"></script>
+    
+    
+    
+  </head>
+  <body>
+    <div id="authorize-div">
       <button id="authorize-button" onclick="auth.handleAuthLogin(event)">
+        
         Gmail Login
       </button>
     </div>
-  
-  <div id="map"></div>  
-  <pre id="output"></pre>
-  
-</body>
+    <div id="map"></div>  
+    <pre id="output"></pre>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOn-GSsYG3ebsKBd7Y57aIer9k-o8cI28&callback=gMaps.initMap" async defer></script>
+    
+  </body>
 </html>

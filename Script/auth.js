@@ -1,6 +1,6 @@
 var auth = {
     
-    CLIENT_ID: "551653508701-vcoujiksgh3bpij3qk5t6ai2a2vj4hep.apps.googleusercontent.com",
+    CLIENT_ID: "551653508701-t276t740tt67796la21ppsqhirjiid4d.apps.googleusercontent.com",
     SCOPES:['https://mail.google.com/'],
     
     checkAuth:function() {
