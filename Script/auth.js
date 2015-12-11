@@ -19,6 +19,8 @@ var auth = {
     {
       
       authDiv.style.display = 'none';
+      gMail.loadGmailApi();
+      gMail.getLabels();
       
     } 
     else 

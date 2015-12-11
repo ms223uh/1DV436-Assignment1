@@ -9,17 +9,20 @@ var gMail = {
         
         request.execute(function(resp){
             
-            for(var i = 0; i < resp.messages.lenght; i++)
+            for(var i = 0; i < resp.messages.length; i++)
             
-                var messages = resp.messages [i];
+                var message = resp.messages [i];
                 var request = gapi.client.gmail.users.messages.get({ 
                             'userId': 'me',
                             'id': message.id
             });
             
+            
             request.execute(function(response){
-
-                var message = response.payload.parts[0].parts[1].body.data;
+                
+                
+                var message = response.payload.parts[1].body.data;
+                
                 if(message === undefined)
                 {
                   message = response.payload.parts[0].parts[1].body.data; 
@@ -47,13 +50,12 @@ var gMail = {
               getLabels:function() {
               var request = gapi.client.gmail.users.labels.list({
              'userId': 'me'
+             
     });
-  
              request.execute(function(resp){
-                 
                  if(resp.labels && resp.labels.length > 0){
                      for (var i = 0; i < resp.labels.length; i++) {
-                    if(resp.labels[i].name.indexOf("location/") > -1)
+                    if(resp.labels[i].name.indexOf("Location/") > -1)
                             {
                               gMail.getMailFromInbox(resp.labels[i]);
                             }
